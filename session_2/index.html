@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Demo</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(108, 169, 172);
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    td,
+    th {
+      border: 2px solid #cecdcd;
+      text-align: left;
+      padding: 8px;
+      text-align: center;
+    }
+
+    table thead tr:first-child {
+      font-size: 25px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    td {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    h1 {
+      font-family: cursive;
+      background-color: orangered;
+      height: 80px;
+      margin: 0 auto 15px auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <h1>Tables</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4" style="background-color: blueviolet">
+              Team Information
+            </th>
+          </tr>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Ahmad</td>
+            <td>Al-Dabouqi</td>
+            <td>0777753269</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>Sanad</td>
+            <td>Khamash</td>
+            <td>0777685208</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Abdullah</td>
+            <td>Mar3i</td>
+            <td>0777685230</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>Ahmad</td>
+            <td>Alriahna</td>
+            <td>0777745108</td>
+            <td>29</td>
+          </tr>
+          <tr>
+            <td>Haneen</td>
+            <td>Alsharabati</td>
+            <td>0777685153</td>
+            <td>28</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
