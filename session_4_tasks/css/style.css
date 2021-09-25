@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(245, 218, 222);
+}
+article {
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 2px solid rgb(151, 150, 150);
+  margin: 0 0 15px 0;
+  width: 55%;
+}
+
+span {
+  padding: 0 6px;
+  background-color: orange;
+  font-weight: bolder;
+}
+
+article span:nth-of-type(3) {
+  background-color: peachpuff;
+  padding: 0 8px;
+}
+
+div {
+  border: 3px dotted red;
+}
+
+body article:nth-of-type(3) {
+  border: 3px dotted red;
+  color: red;
+}
