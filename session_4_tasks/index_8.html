@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling</title>
+  </head>
+  <style>
+    h2 {
+      text-decoration: underline;
+    }
+
+    ul:last-child,
+    .a {
+      margin-bottom: 10px;
+    }
+    b {
+      margin-bottom: 10px;
+    }
+
+    ul:first-child > li > ul {
+      list-style: none;
+    }
+
+    ul:first-child > li:first-child {
+      font-weight: bolder;
+    }
+
+    li > ul {
+      color: blue;
+      font-size: 18px;
+    }
+
+    ul a {
+      color: red;
+    }
+
+    h3:nth-of-type(1) {
+      color: blue;
+    }
+
+    h3 > a {
+      color: rgb(224, 164, 0);
+    }
+
+    h3:nth-of-type(3) a {
+      background-color: yellowgreen;
+    }
+  </style>
+  <body>
+    <h2>Have Fun while Styling!</h2>
+    <hr />
+
+    <h3>Here is text <a href="#">with a link</a> Let's do it !</h3>
+    <h3>We have more <a href="#">links</a> here:</h3>
+    <h3>Is this a (<a href="#">link</a>?).</h3>
+
+    <h4>We have a list</h4>
+
+    <ul>
+      <li class="a"><b>Please,</b> <a href="#">Click Me!</a></li>
+      <li>
+        Can you? let's count
+        <ul>
+          <li><b>111</b></li>
+          <li>222 <a href="#">Another Link</a></li>
+          <li>
+            333
+
+            <ul>
+              <li><b>red</b></li>
+              <li>green</li>
+              <li>blue <a href="#">Color's Link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>That's Enough !</li>
+    </ul>
+  </body>
+</html>
