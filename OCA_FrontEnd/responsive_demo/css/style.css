@@ -58,12 +58,16 @@ header > nav > .nav-wrapper-2 > li a {
 }
 
 .nav-left {
-  width: 17em;
+  width: 16.5em;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.nav-left li:last-child img {
+  width: 9.5em;
+  height: auto;
+}
 .nav-right {
   width: 6em;
   display: flex;
