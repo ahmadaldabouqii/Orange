@@ -6,7 +6,7 @@ html {
 .nav {
   padding: 0.1em 0;
   background-color: #fff7f7;
-  /* height: 10vh; */
+  height: 5.9vh;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,7 +46,7 @@ nav .nav-wrapper-2 li:last-child button {
   border-radius: 1em;
   min-width: 15em;
   font-size: 0.88em;
-  border: none;
+  border-color: #fff7f7;
 }
 
 header > nav > .nav-wrapper-2 > li a {
@@ -71,33 +71,30 @@ header > nav > .nav-wrapper-2 > li a {
   align-items: center;
 }
 
-main {
-  /* margin: 1em 0 0 0; */
-}
-
 .main-info {
-  height: 50vh;
+  height: 44.6vh;
   background-image: url(../img/swiper-slide.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   display: flex;
   padding: 1em;
-  /* justify-content: center; */
   align-items: center;
+  box-sizing: border-box;
 }
 
 .wrapper-main-info {
-  line-height: 2.2;
+  line-height: 2.1;
   width: 30%;
 }
 
 .main-info h1 {
   font-weight: 800;
-  font-size: 2em;
+  font-size: 2.1em;
+  color: #ffffff;
 }
 
 .main-info p {
-  color: #fff;
+  color: #ffffff;
   font-size: 0.8em;
   letter-spacing: 0.02em;
 }
@@ -109,15 +106,17 @@ main {
   border-color: #fff;
   vertical-align: middle;
   cursor: pointer;
+  border: 0.15em solid;
   user-select: none;
   transition: 0.25s all ease;
   white-space: pre-wrap;
-  padding: 0.7em 2em;
+  padding: 0.6em 2.5em;
   border-radius: 3em;
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0.1em;
   font-size: 1em;
+  background-color: transparent;
 }
 
 .main-info .wrapper-main-info button:hover {
@@ -167,9 +166,6 @@ main {
 
   nav .nav-wrapper-2 li:first-child {
     border-top: none;
-  }
-
-  nav .nav-wrapper-2 li:last-child {
   }
 
   header > nav > .nav-wrapper-2 > li:hover {
