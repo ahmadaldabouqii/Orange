@@ -1,0 +1,27 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.box {
+  text-align: center;
+  width: 300px;
+  height: 70px;
+  background-color: yellow;
+  border: 1px solid black;
+  cursor: pointer;
+}
