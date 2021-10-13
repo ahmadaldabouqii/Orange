@@ -14,6 +14,6 @@ box.addEventListener('click', () => {
 });
 
 function randomColor(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 console.log(randomColor(0, 3));
