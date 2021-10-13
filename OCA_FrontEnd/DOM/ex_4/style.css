@@ -1,0 +1,31 @@
+body {
+  margin: 2em 0 0 2em;
+}
+
+.box {
+  width: 500px;
+  height: 150px;
+  text-align: center;
+  border: 1.6px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0 0;
+  border-radius: 15px;
+  font-family: 'Arial';
+  font-size: 12pt;
+}
+
+select,
+input[type='checkbox'] {
+  margin-right: 0.5em;
+  margin-left: -0.1px;
+}
+
+select {
+  font-size: 1em;
+}
+
+label {
+  font-size: 1.1em;
+}

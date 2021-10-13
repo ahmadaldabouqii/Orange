@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Formatting text</title>
+  </head>
+  <body>
+    <form action="#" name="form">
+      <select name="font-family" class="font-family">
+        <option value="Arial" selected>Arial</option>
+        <option value="Veranda">Veranda</option>
+        <option value="sans-serif">sans-serif</option>
+        <option value="monospace">monospace</option>
+        <option value="cursive">cursive</option>
+      </select>
+      <select name="font-size" class="font-size">
+        <option value="8pt">8pt</option>
+        <option value="10pt">10pt</option>
+        <option value="12pt" selected>12pt</option>
+        <option value="14pt">14pt</option>
+        <option value="16pt">16pt</option>
+      </select>
+      <label for="italic"
+        >Italic <input type="checkbox" name="italic" id="italic" value="italic"
+      /></label>
+      <label for="bold"
+        >Bold <input type="checkbox" name="bold" id="bold" value="bold"
+      /></label>
+      <label for="underline"
+        >Underline
+        <input
+          type="checkbox"
+          name="underline"
+          id="underline"
+          value="underline"
+      /></label>
+    </form>
+    <div class="box">Everything turns up one sooner or later...</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
