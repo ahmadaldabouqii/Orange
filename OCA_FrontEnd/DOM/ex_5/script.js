@@ -9,7 +9,6 @@ const submitBtn = document.querySelector('#submit');
 password.addEventListener('keyup', () => {
   if (
     password.value.length < 6 &&
-    !password.length !== repeatPassword.length &&
     password.value !== repeatPassword.value &&
     password.value.length !== repeatPassword.value.length
   ) {
@@ -29,7 +28,6 @@ password.addEventListener('keyup', () => {
 repeatPassword.addEventListener('keyup', () => {
   if (
     repeatPassword.value.length > 0 &&
-    !repeatPassword.length !== password.length &&
     repeatPassword.value !== password.value &&
     repeatPassword.value.length !== password.value.length
   ) {
