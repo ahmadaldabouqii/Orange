@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Input Check</title>
+  </head>
+  <body>
+    <form action="#">
+      <table>
+        <tr>
+          <td>
+            <label for="password">Password (min 6 characters):</label>
+          </td>
+          <td>
+            <input type="password" id="password" />
+            <span class="error_field_1">Too short</span>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="repeatPass">Repeat password:</label></td>
+          <td>
+            <input type="password" id="repeatPass" />
+            <span class="error_field_2">Doesn't match</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="submit" id="submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
