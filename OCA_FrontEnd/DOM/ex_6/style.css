@@ -1,0 +1,27 @@
+article {
+  width: 400px;
+  border: 1px solid black;
+  margin: 0 0 0.5em 0;
+}
+
+.article_header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  font-weight: 600;
+  background-color: silver;
+  padding: 0.5em;
+}
+
+.box {
+  padding: 0.1em 0.7em 0.7em 0.7em;
+  font-size: 1.1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

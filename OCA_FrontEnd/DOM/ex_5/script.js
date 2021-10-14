@@ -16,6 +16,7 @@ password.addEventListener('keyup', () => {
   } else {
     error_field_1.style.display = 'none';
   }
+
   if (
     password.value.length === repeatPassword.value.length &&
     password.value === repeatPassword.value &&
@@ -35,6 +36,7 @@ repeatPassword.addEventListener('keyup', () => {
   } else {
     error_field_2.style.display = 'none';
   }
+
   if (
     repeatPassword.value.length === password.value.length &&
     repeatPassword.value === password.value &&
