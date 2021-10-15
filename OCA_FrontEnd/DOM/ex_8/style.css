@@ -1,0 +1,85 @@
+.colorBox_Container {
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: goldenrod;
+  margin: 1px;
+}
+
+.data {
+  width: 15em;
+  margin: 1em 0 0 0;
+  display: block;
+  background-color: rosybrown;
+  font-family: cursive;
+  border: 1.5px solid purple;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.box_1 {
+  background-color: red;
+}
+.box_2 {
+  background-color: blue;
+}
+.box_3 {
+  background-color: blue;
+}
+.box_4 {
+  background-color: blanchedalmond;
+}
+.box_5 {
+  background-color: burlywood;
+}
+.box_6 {
+  background-color: aliceblue;
+}
+.box_7 {
+  background-color: aqua;
+}
+.box_8 {
+  background-color: aquamarine;
+}
+.box_9 {
+  background-color: chartreuse;
+}
+.box_10 {
+  background-color: azure;
+}
+.box_11 {
+  background-color: chocolate;
+}
+.box_12 {
+  background-color: coral;
+}
+.box_13 {
+  background-color: orange;
+}
+.box_14 {
+  background-color: orangered;
+}
+.box_15 {
+  background-color: pink;
+}
+.box_16 {
+  background-color: palevioletred;
+}
+.box_17 {
+  background-color: plum;
+}
+.box_18 {
+  background-color: purple;
+}
+.box_19 {
+  background-color: powderblue;
+}
+.box_20 {
+  background-color: peru;
+}
