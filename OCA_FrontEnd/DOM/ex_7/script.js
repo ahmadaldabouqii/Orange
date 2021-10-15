@@ -5,7 +5,6 @@ const songTextField = document.querySelector('#songTextSearch');
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-
   if (songTextField.value) {
     const div = document.createElement('div');
     div.classList.add('song');
