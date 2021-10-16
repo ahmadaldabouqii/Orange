@@ -48,25 +48,24 @@ const submitBtn = document.querySelector('#submit');
 
 // smart solution
 const inputs = document.querySelectorAll('form input[type=password]');
-
-inputs.forEach((input, i, arr) => {
+inputs.forEach((_, i, arr) => {
   arr[i].addEventListener('keyup', () => {
-    let e = arr[i] === password ? error_field_1 : error_field_2;
+    let errrField = arr[i] === password ? error_field_1 : error_field_2;
     if (
       arr[i].value.length < 6 &&
       password.value !== repeatPassword.value &&
       password.value.length !== repeatPassword.value.length
     ) {
-      showError(e);
+      showError(errrField);
     } else {
-      e.style.display = 'none';
+      errrField.style.display = 'none';
     }
 
     if (
+      arr[i].value.length > 5 &&
       password.value.length === repeatPassword.value.length &&
       password.value === repeatPassword.value &&
       password.value.length !== 0 &&
-      arr[i].value.length > 5 &&
       repeatPassword.value.length !== 0
     )
       submitBtn.style.display = 'block';
