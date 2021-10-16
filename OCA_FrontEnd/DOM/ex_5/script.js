@@ -6,9 +6,9 @@ const repeatPassword = document.querySelector('#repeatPass');
 const error_field_2 = document.querySelector('.error_field_2');
 const submitBtn = document.querySelector('#submit');
 
-/////////////////////       smart && Better Solution       /////////////////////
+/////////////////////       Smart && Better Solution       /////////////////////
 
-const inputs = document.querySelectorAll('form input[type=password]');
+const inputs = document.querySelectorAll('.form input[type=password]');
 inputs.forEach((_, i, arr) => {
   arr[i].addEventListener('keyup', () => {
     let errorField = arr[i] === password ? error_field_1 : error_field_2;
@@ -18,18 +18,18 @@ inputs.forEach((_, i, arr) => {
       password.value.length !== repeatPassword.value.length
     ) {
       showError(errorField);
-    } else {
-      errorField.style.display = 'none';
-    }
-
-    if (
+    } else if (
       arr[i].value.length > 5 &&
       password.value.length === repeatPassword.value.length &&
       password.value === repeatPassword.value &&
       password.value.length !== 0 &&
       repeatPassword.value.length !== 0
-    )
+    ) {
       submitBtn.style.display = 'block';
+      errorField.style.display = 'none';
+    } else {
+      errorField.style.display = 'none';
+    }
   });
 });
 
