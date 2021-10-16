@@ -50,15 +50,15 @@ const submitBtn = document.querySelector('#submit');
 const inputs = document.querySelectorAll('form input[type=password]');
 inputs.forEach((_, i, arr) => {
   arr[i].addEventListener('keyup', () => {
-    let errrField = arr[i] === password ? error_field_1 : error_field_2;
+    let errorField = arr[i] === password ? error_field_1 : error_field_2;
     if (
       arr[i].value.length < 6 &&
       password.value !== repeatPassword.value &&
       password.value.length !== repeatPassword.value.length
     ) {
-      showError(errrField);
+      showError(errorField);
     } else {
-      errrField.style.display = 'none';
+      errorField.style.display = 'none';
     }
 
     if (
