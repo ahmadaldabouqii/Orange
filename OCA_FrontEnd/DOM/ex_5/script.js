@@ -10,18 +10,23 @@ const submitBtn = document.querySelector('#submit');
 
 const inputs = document.querySelectorAll('.form input[type=password]');
 inputs.forEach((_, i, arr) => {
-  arr[i].addEventListener('keyup', e => {
+  arr[i].addEventListener('keyup', () => {
     let errorField = arr[i] === password ? error_field_1 : error_field_2;
     if (
-      password.value.length <= 5 &&
-      repeatPassword.value.length <= 5 &&
+      password.value.length < 6 &&
+      repeatPassword.value.length < 6 &&
       password.value !== repeatPassword.value &&
       password.value.length !== repeatPassword.value.length
     ) {
-      showError(error_field_1, error_field_2);
-    } else if (
-      password.value.length >= 6 &&
-      repeatPassword.value.length >= 6 &&
+      showError(error_field_1);
+      showError(error_field_2);
+    } else {
+      submitBtn.style.display = 'none';
+    }
+
+    if (
+      password.value.length > 5 &&
+      repeatPassword.value.length > 5 &&
       password.value.length === repeatPassword.value.length &&
       password.value === repeatPassword.value &&
       password.value.length !== 0 &&
@@ -30,8 +35,6 @@ inputs.forEach((_, i, arr) => {
       submitBtn.style.display = 'block';
       error_field_1.style.display = 'none';
       error_field_2.style.display = 'none';
-    } else {
-      errorField.style.display = 'none';
     }
   });
 });
@@ -78,8 +81,7 @@ repeatPassword.addEventListener('keyup', () => {
 });
 */
 
-function showError(err1, err2) {
-  err1.style.display = 'inline';
-  err2.style.display = 'inline';
+function showError(err) {
+  err.style.display = 'inline';
   submitBtn.style.display = 'none';
 }
