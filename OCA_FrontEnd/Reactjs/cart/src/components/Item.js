@@ -10,11 +10,12 @@ class Item extends React.Component {
   }
 
   decrease = () => {
-    if (this.state.counter > 0)
+    if (this.state.counter > 0) {
       this.setState({
         counter: this.state.counter - 1,
       });
-    this.props.dec();
+      this.props.dec();
+    }
   };
 
   inecrease = () => {
