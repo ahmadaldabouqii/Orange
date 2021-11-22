@@ -1,0 +1,43 @@
+img{
+    width: 330px;
+    height: 250px;
+}
+
+.list-item{
+    color: red;
+    font-style: italic;
+}
+
+table{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1f1c1;
+}
+
+/* table {
+    border-spacing: 5px;
+} */
+
+table,  th, td {
+    border: 1px solid saddlebrown ;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 5px;
+    text-align: left;
+}
+
+caption{
+    font-family: cursive;
+    font-style: oblique;
+}
+
+#tb tr:first-child{
+    background-color: red;
+}
+
+#tb tr:nth-child(2){
+    background-color: blue;
+}

@@ -1,0 +1,27 @@
+.holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 0.3em;
+}
+
+button {
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(218, 208, 208);
+}
+
+span {
+  padding: 0 0.8rem;
+}
