@@ -14,10 +14,17 @@ const ProductTable = ({ Products, filterText, inStockOnly }) => {
     if (inStockOnly && !product.stocked) return;
 
     if (product.category !== lastCategory) {
-      rows.push(<ProductCategoryRow category={product.category} />);
+      rows.push(
+        <ProductCategoryRow
+          key={product.category}
+          category={product.category}
+        />
+      );
     }
+
     rows.push(
       <ProductRow
+        key={product.name}
         name={product.name}
         price={product.price}
         stocked={product.stocked}
@@ -29,8 +36,8 @@ const ProductTable = ({ Products, filterText, inStockOnly }) => {
     <table>
       <thead>
         <tr>
-          <td>Name</td>
-          <td>Price</td>
+          <th>Name</th>
+          <th>Price</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>
