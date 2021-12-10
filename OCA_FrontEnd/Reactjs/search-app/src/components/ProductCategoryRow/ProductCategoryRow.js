@@ -2,9 +2,9 @@ import React from 'react';
 
 const ProductCategoryRow = ({ category }) => {
   return (
-    <tr>
+    <th>
       <td>{category}</td>
-    </tr>
+    </th>
   );
 };
 export default ProductCategoryRow;
