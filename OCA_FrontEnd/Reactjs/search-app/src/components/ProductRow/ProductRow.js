@@ -1,5 +1,7 @@
 import React from 'react';
 
-export const ProductRow = () => {
+const ProductRow = () => {
   return <div></div>;
 };
+
+export default ProductRow;
